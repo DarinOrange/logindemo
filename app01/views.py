@@ -10,7 +10,8 @@ def login(request):
         pwd = request.POST.get('pwd')
         if user == 'alex' and pwd == 'alexdsb':
             # return redirect('http://jandan.net/')
-            return redirect('/index/')
+            return render(request, 'login2.html')
+            # return redirect('/index/')
     return render(request, 'login.html')
 
 
